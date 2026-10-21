@@ -1,0 +1,6 @@
+{
+  "name": "The Everyday Kitchen",
+  "description": "An educational Indian cooking blog for beginners featuring easy homestyle recipes, technique guides, and spice fundamentals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
