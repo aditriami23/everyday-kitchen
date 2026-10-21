@@ -1,6 +1,7 @@
 import { ArrowRight, Clock, ChefHat, Sparkles, BookOpen, Flame, CheckCircle2 } from 'lucide-react';
 import { SeoHead } from '../components/SeoHead';
 import { AeoBlock } from '../components/AeoBlock';
+import { OptimizedImage } from '../components/OptimizedImage';
 import { FAQItem } from '../types';
 
 interface HomePageProps {
@@ -26,7 +27,7 @@ export function HomePage({ navigate }: HomePageProps) {
       title: 'Easy Paneer Recipes: Simple Ideas for Every Meal',
       shortTitle: 'Everyday Matar Paneer',
       slug: '/articles/easy-paneer-recipes/',
-      image: '/src/assets/images/paneer_curry_hero_1792556801237.jpg',
+      image: '/images/paneer-curry-hero.jpg',
       alt: 'Fresh homemade Matar Paneer curry in a ceramic bowl with herbs',
       prepTime: '15 mins',
       cookTime: '25 mins',
@@ -40,7 +41,7 @@ export function HomePage({ navigate }: HomePageProps) {
       title: 'Homemade Samosa Recipe: Crispy and Flavourful',
       shortTitle: 'Crispy Punjabi Samosas',
       slug: '/articles/homemade-samosa-recipe/',
-      image: '/src/assets/images/samosa_crispy_hero_1792556803224.jpg',
+      image: '/images/samosa-crispy-hero.jpg',
       alt: 'Crispy golden fried Punjabi samosas with fresh green and red chutneys',
       prepTime: '40 mins',
       cookTime: '30 mins',
@@ -54,7 +55,7 @@ export function HomePage({ navigate }: HomePageProps) {
       title: 'How to Make Masala Chai at Home: Spices & Ratios',
       shortTitle: 'Authentic Stovetop Masala Chai',
       slug: '/articles/how-to-make-masala-chai/',
-      image: '/src/assets/images/masala_chai_hero_1792556804617.jpg',
+      image: '/images/masala-chai-hero.jpg',
       alt: 'Pouring hot spiced masala chai into clay cups with scattered whole spices',
       prepTime: '5 mins',
       cookTime: '10 mins',
@@ -102,7 +103,7 @@ export function HomePage({ navigate }: HomePageProps) {
         title="Easy Indian Recipes for Beginners | The Everyday Kitchen"
         description="Master easy Indian recipes at home with step-by-step guides for soft paneer curries, flaky homemade samosas, and fragrant masala chai."
         canonicalPath="/"
-        ogImage="/src/assets/images/home_hero_indian_feast_1792556801180.jpg"
+        ogImage="/images/home-hero-indian-feast.jpg"
         ogType="website"
         jsonLd={jsonLd}
       />
@@ -160,18 +161,18 @@ export function HomePage({ navigate }: HomePageProps) {
 
             {/* Right Column: Hero Food Photography */}
             <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-200/80 aspect-16/10 group">
-                <img
-                  src="/src/assets/images/home_hero_indian_feast_1792556801180.jpg"
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-stone-200/80 group">
+                <OptimizedImage
+                  src="/images/home-hero-indian-feast.jpg"
                   alt="A generous spread of homestyle Indian cooking including rich paneer curry, fluffy rotis, and aromatic whole spices"
-                  className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700 ease-out"
-                  width="1280"
-                  height="800"
-                  loading="eager"
-                  fetchPriority="high"
+                  className="w-full group-hover:scale-102 transition-transform duration-700 ease-out"
+                  width={1280}
+                  height={800}
+                  aspectRatio="16/10"
+                  priority={true}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div className="absolute bottom-4 left-4 right-4 text-white z-10">
                   <p className="text-xs font-mono uppercase tracking-wider text-amber-200">
                     The Homestyle Indian Table
                   </p>
@@ -265,16 +266,16 @@ export function HomePage({ navigate }: HomePageProps) {
                 className="group flex flex-col bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 cursor-pointer"
               >
                 {/* Recipe Card Image */}
-                <div className="relative aspect-4/3 overflow-hidden bg-stone-100">
-                  <img
+                <div className="relative overflow-hidden bg-stone-100">
+                  <OptimizedImage
                     src={card.image}
                     alt={card.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    width="600"
-                    height="450"
+                    className="w-full group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={450}
+                    aspectRatio="4/3"
                   />
-                  <div className="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-xs text-white text-[11px] font-medium px-2.5 py-1 rounded-md">
+                  <div className="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-xs text-white text-[11px] font-medium px-2.5 py-1 rounded-md z-10">
                     {card.category}
                   </div>
                 </div>

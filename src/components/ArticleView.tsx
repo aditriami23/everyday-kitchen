@@ -4,6 +4,7 @@ import { SeoHead } from './SeoHead';
 import { Breadcrumbs } from './Breadcrumbs';
 import { AeoBlock } from './AeoBlock';
 import { RecipeCard } from './RecipeCard';
+import { OptimizedImage } from './OptimizedImage';
 
 interface ArticleViewProps {
   recipe: RecipeData;
@@ -184,14 +185,14 @@ export function ArticleView({ recipe, navigate }: ArticleViewProps) {
 
         {/* Primary Hero Food Photography */}
         <figure className="my-8 rounded-2xl overflow-hidden border border-stone-200 shadow-md">
-          <img
+          <OptimizedImage
             src={recipe.heroImage}
             alt={recipe.heroImageAlt}
-            className="w-full aspect-16/9 object-cover"
-            loading="eager"
-            fetchPriority="high"
-            width="1280"
-            height="720"
+            className="w-full"
+            aspectRatio="16/9"
+            priority={true}
+            width={1280}
+            height={720}
           />
           <figcaption className="p-3 bg-stone-50 border-t border-stone-100 text-xs text-stone-500 italic text-center">
             {recipe.heroImageCaption}
@@ -238,13 +239,13 @@ export function ArticleView({ recipe, navigate }: ArticleViewProps) {
         {/* In-Content Food Photography 1 */}
         {recipe.inlineImages[0] && (
           <figure className="my-10 rounded-xl overflow-hidden border border-stone-200">
-            <img
+            <OptimizedImage
               src={recipe.inlineImages[0].src}
               alt={recipe.inlineImages[0].alt}
-              className="w-full aspect-4/3 object-cover"
-              loading="lazy"
-              width="800"
-              height="600"
+              className="w-full"
+              aspectRatio="4/3"
+              width={800}
+              height={600}
             />
             <figcaption className="p-3 bg-stone-50 border-t border-stone-100 text-xs text-stone-600 italic">
               {recipe.inlineImages[0].caption}
@@ -288,13 +289,13 @@ export function ArticleView({ recipe, navigate }: ArticleViewProps) {
         {/* In-Content Food Photography 2 */}
         {recipe.inlineImages[1] && (
           <figure className="my-10 rounded-xl overflow-hidden border border-stone-200">
-            <img
+            <OptimizedImage
               src={recipe.inlineImages[1].src}
               alt={recipe.inlineImages[1].alt}
-              className="w-full aspect-4/3 object-cover"
-              loading="lazy"
-              width="800"
-              height="600"
+              className="w-full"
+              aspectRatio="4/3"
+              width={800}
+              height={600}
             />
             <figcaption className="p-3 bg-stone-50 border-t border-stone-100 text-xs text-stone-600 italic">
               {recipe.inlineImages[1].caption}

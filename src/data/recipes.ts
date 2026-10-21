@@ -9,17 +9,17 @@ export const recipesData: Record<string, RecipeData> = {
     metaDescription: 'Discover foolproof, easy paneer recipes for beginner home cooks. Learn how to keep paneer soft, create velvety curries, and avoid common cooking mistakes.',
     primaryKeyword: 'easy paneer recipes',
     secondaryKeywords: ['quick paneer dishes', 'vegetarian Indian recipes'],
-    heroImage: '/src/assets/images/paneer_curry_hero_1792556801237.jpg',
+    heroImage: '/images/paneer-curry-hero.jpg',
     heroImageAlt: 'Creamy homemade Matar Paneer curry garnished with cream and fresh cilantro in a rustic bowl',
     heroImageCaption: 'Golden cubes of pan-seared paneer and sweet green peas simmered in a velvety spiced tomato-onion reduction.',
     inlineImages: [
       {
-        src: '/src/assets/images/paneer_cubes_prep_1792556801989.jpg',
+        src: '/images/paneer-cubes-prep.jpg',
         alt: 'Fresh homemade paneer block cut into uniform bite-sized cubes on a wooden board',
         caption: 'Figure 1: Cutting paneer into neat, even 2-centimetre cubes ensures uniform cooking and prevents edges from crumbling.',
       },
       {
-        src: '/src/assets/images/paneer_skillet_cooking_1792556802295.jpg',
+        src: '/images/paneer-skillet-cooking.jpg',
         alt: 'Paneer cubes sizzling in a cast-iron skillet with aromatic spices and bell peppers',
         caption: 'Figure 2: A quick, gentle sear in ghee caramelises the exterior while keeping the paneer interior succulent.',
       },
@@ -217,17 +217,17 @@ export const recipesData: Record<string, RecipeData> = {
     metaDescription: 'Master the art of crispy, flaky Punjabi samosas at home. Step-by-step dough rolling, cone folding, spiced potato filling, and oil temperature secrets.',
     primaryKeyword: 'homemade samosa recipe',
     secondaryKeywords: ['crispy samosa recipe', 'samosa filling recipe'],
-    heroImage: '/src/assets/images/samosa_crispy_hero_1792556803224.jpg',
+    heroImage: '/images/samosa-crispy-hero.jpg',
     heroImageAlt: 'Golden crisp Punjabi samosas served on a terracotta plate with mint and tamarind chutneys',
     heroImageCaption: 'Golden, blister-free Punjabi samosas resting on a terracotta platter with homemade chutneys.',
     inlineImages: [
       {
-        src: '/src/assets/images/samosa_folding_prep_1792556817224.jpg',
+        src: '/images/samosa-folding-prep.jpg',
         alt: 'Hands shaping rolled samosa pastry dough into a cone and adding potato stuffing',
         caption: 'Figure 1: Creating the cone by overlapping the straight edge and creating a snug seal prevents oil from seeping inside.',
       },
       {
-        src: '/src/assets/images/samosa_frying_kadai_1792556804654.jpg',
+        src: '/images/samosa-frying-kadai.jpg',
         alt: 'Samosas gently frying in a kadai of golden oil at low-medium temperature',
         caption: 'Figure 2: Frying at a steady low-to-medium temperature (145°C–150°C) allows the thick pastry to cook crisp without surface bubbles.',
       },
@@ -423,14 +423,19 @@ export const recipesData: Record<string, RecipeData> = {
     metaDescription: 'Learn how to brew authentic Indian masala chai from scratch. Discover the ideal milk-to-water ratio, whole spice blending, and rolling boil techniques.',
     primaryKeyword: 'how to make masala chai',
     secondaryKeywords: ['homemade Indian chai', 'Indian spiced tea recipe'],
-    heroImage: '/src/assets/images/masala_chai_hero_1792556804617.jpg',
+    heroImage: '/images/masala-chai-hero.jpg',
     heroImageAlt: 'Hot spiced Indian masala chai poured from a brass kettle into rustic terracotta kulhad cups',
     heroImageCaption: 'A velvety, aromatic pour of authentic Kadak Masala Chai into rustic earthen kulhads.',
     inlineImages: [
       {
-        src: '/src/assets/images/masala_chai_spices_mortar_1792556805966.jpg',
+        src: '/images/masala-chai-spices-mortar.jpg',
         alt: 'Crushed green cardamom, fresh ginger, and cinnamon in a rustic stone mortar',
         caption: 'Figure 1: Freshly crushing whole spices immediately before brewing releases delicate volatile essential oils that powdered spices lack.',
+      },
+      {
+        src: '/images/masala-chai-simmering-pot.jpg',
+        alt: 'A saucepan of masala chai simmering on the stove with frothy bubbles and whole spices',
+        caption: 'Figure 2: Allowing the chai to reach repeated gentle rolling boils (the ubal) emulsifies the dairy fats with bold black tea tannins.',
       },
     ],
     prepTimeMinutes: 5,

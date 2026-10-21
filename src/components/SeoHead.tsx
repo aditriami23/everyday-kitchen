@@ -13,7 +13,7 @@ export function SeoHead({
   title,
   description,
   canonicalPath,
-  ogImage = '/src/assets/images/home_hero_indian_feast_1792556801180.jpg',
+  ogImage = '/images/home-hero-indian-feast.jpg',
   ogType = 'website',
   jsonLd,
 }: SeoHeadProps) {
